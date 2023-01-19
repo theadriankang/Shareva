@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_main"
+        android:title="Home"
+        android:icon="@drawable/icon_home"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"/>
+
+    <item
+        android:id="@+id/bottom_nav_share"
+        android:title="Share"
+        android:icon="@drawable/icon_share"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"/>
+
+    <item
+        android:id="@+id/bottom_nav_foryou"
+        android:title="For You"
+        android:icon="@drawable/icon_foryou"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"/>
+
+    <item
+        android:id="@+id/bottom_nav_sharebox"
+        android:title="Sharebox"
+        android:icon="@drawable/icon_sharebox"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"/>
+
+    <item
+        android:id="@+id/bottom_nav_me"
+        android:title="Me"
+        android:icon="@drawable/icon_me"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"/>
+</menu>

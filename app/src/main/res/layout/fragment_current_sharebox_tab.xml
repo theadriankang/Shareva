@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CurrentShareboxTabFragment">
+
+    <LinearLayout
+        android:id="@+id/shareboxCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/regular_poppins"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shareboxes"
+            android:textSize="35dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Plan"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/regular_poppins"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:id="@+id/txtView_userSelectedPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Plan"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scheduled Return Date:"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/regular_poppins"
+            android:layout_marginTop="5dp"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:id="@+id/txtView_userReturnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 February 2023"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery Address"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/regular_poppins"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:id="@+id/txtView_userDeliveryAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_address_1"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:id="@+id/txtView_userDeliveryAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Singapore 310009"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sharebox #1"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clothes"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/rounded_white_bg"
+                android:src="@drawable/listing_slimfitjeans" />
+
+            <TextView
+                android:id="@+id/current_itemName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toRightOf="@id/imageView1"
+                android:fontFamily="@font/bold_poppins"
+                android:text="Slim Fit Jeans"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/current_itemSize1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_itemName1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toRightOf="@id/imageView1"
+                android:fontFamily="@font/regular_poppins"
+                android:text="Size 38 US"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/current_itemBrand1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/current_itemSize1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/imageView1"
+                android:fontFamily="@font/bold_poppins"
+                android:text="Saint Laurent"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/rounded_white_bg"
+                android:src="@drawable/listing_slimfitjeans"/>
+
+            <TextView
+                android:id="@+id/current_itemName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slim Fit Jeans"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView2"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/current_itemSize2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size 38 US"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular_poppins"
+                android:layout_toRightOf="@id/imageView2"
+                android:layout_below="@id/current_itemName2"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/current_itemBrand2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saint Laurent"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView2"
+                android:layout_below="@+id/current_itemSize2"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/rounded_white_bg"
+                android:src="@drawable/listing_slimfitjeans"/>
+
+            <TextView
+                android:id="@+id/current_itemName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slim Fit Jeans"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView3"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/current_itemSize3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size 38 US"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular_poppins"
+                android:layout_toRightOf="@id/imageView3"
+                android:layout_below="@id/current_itemName3"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/current_itemBrand3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saint Laurent"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView3"
+                android:layout_below="@+id/current_itemSize3"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/rounded_white_bg"
+                android:src="@drawable/listing_slimfitjeans"/>
+
+            <TextView
+                android:id="@+id/current_itemName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slim Fit Jeans"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView4"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/current_itemSize4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size 38 US"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular_poppins"
+                android:layout_toRightOf="@id/imageView4"
+                android:layout_below="@id/current_itemName4"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/current_itemBrand4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saint Laurent"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView4"
+                android:layout_below="@+id/current_itemSize4"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/rounded_white_bg"
+                android:src="@drawable/listing_slimfitjeans"/>
+
+            <TextView
+                android:id="@+id/current_itemName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slim Fit Jeans"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView5"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/current_itemSize5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size 38 US"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular_poppins"
+                android:layout_toRightOf="@id/imageView5"
+                android:layout_below="@id/current_itemName5"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/current_itemBrand5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saint Laurent"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView5"
+                android:layout_below="@+id/current_itemSize5"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bags"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/rounded_white_bg"
+                android:src="@drawable/listing_slimfitjeans"/>
+
+            <TextView
+                android:id="@+id/current_itemName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slim Fit Jeans"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView6"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/current_itemSize6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size 38 US"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular_poppins"
+                android:layout_toRightOf="@id/imageView6"
+                android:layout_below="@id/current_itemName6"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/current_itemBrand6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saint Laurent"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView6"
+                android:layout_below="@+id/current_itemSize6"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accessories"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/rounded_white_bg"
+                android:src="@drawable/listing_slimfitjeans"/>
+
+            <TextView
+                android:id="@+id/current_itemName7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slim Fit Jeans"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView7"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/current_itemSize7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size 38 US"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular_poppins"
+                android:layout_toRightOf="@id/imageView7"
+                android:layout_below="@id/current_itemName7"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/current_itemBrand7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saint Laurent"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@id/imageView7"
+                android:layout_below="@+id/current_itemSize7"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_extendCurrentSharebox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="100dp"
+            android:text="Extend"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:fontFamily="@font/bold_poppins"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="30dp"
+             />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

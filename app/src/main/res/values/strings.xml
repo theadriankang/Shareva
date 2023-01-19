@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Shareva</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="setup_account_message">Set up your username and password.\nYou can always change it later.</string>
+    <string name="sign_in">Sign in</string>
+    <string name="ask_account_msg">Already have an account?</string>
+
+    <string name="listing_success_msg_1">Item has been listed\nsuccessfully!</string>
+    <string name="listing_success_msg_2">You will receive an email regarding the\nscheduling of your item’s pick up shortly.\nDo look out for it!</string>
+    <string name="share_description_msg">Describe the model, color, features and whatever details a renter may be interested in!</string>
+    <string name="user_address_1">9 Kang Street, #02-242</string>
+
+
+</resources>
