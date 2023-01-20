@@ -33,7 +33,7 @@
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/userName"
+            android:id="@+id/editTxt_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -50,7 +50,7 @@
             android:textColorHint="@color/hint" />
 
         <EditText
-            android:id="@+id/userEmail"
+            android:id="@+id/editTxt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -67,7 +67,7 @@
             android:textColorHint="@color/hint" />
 
         <EditText
-            android:id="@+id/userPassword"
+            android:id="@+id/editTxt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"

@@ -15,7 +15,7 @@
             android:name=".SuccessfulListingActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"

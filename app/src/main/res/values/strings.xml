@@ -13,4 +13,29 @@
     <string name="user_address_1">9 Kang Street, #02-242</string>
 
 
+    <string-array name="forYouItem_name">
+        <item name="Giorgio Armani">Giorgio Armani</item>
+        <item name="Calvin Klein Jeans">Calvin Klein Jeans</item>
+        <item name="YUNNI.G">YUNNI.G</item>
+        <item name="SANDRO">SANDRO</item>
+        <item name="LoveFreya">LoveFreya</item>
+        <item name="Diane Von Furstenberg">Diane Von Furstenberg</item>
+        <item name="PH5">PH5</item>
+        <item name="YUNNI.G">YUNNI.G</item>
+    </string-array>
+
+    <string-array name="forYouItem_desc">
+        <item name="Plaid Double Breasted Jacket">Plaid Double Breasted Jacket</item>
+        <item name="Calvin Klein X Andy Warhol Foundation Jacket">Calvin Klein X Andy Warhol Foundation Jacket</item>
+        <item name="White Blazer">White Blazer</item>
+        <item name="Plaid Single Breasted Blazer">Plaid Single Breasted Blazer</item>
+        <item name="Skyblue Suit Dress">Skyblue Suit Dress</item>
+        <item name="Navy Blue with White Stripe Cotton Wool Blend">Navy Blue with White Stripe Cotton Wool Blend</item>
+        <item name="Fit and flare ribbed knit dress">Fit and flare ribbed knit dress</item>
+        <item name="Peplum Layered Sleeveless Dress">Peplum Layered Sleeveless Dress</item>
+
+    </string-array>
+
+
+
 </resources>
