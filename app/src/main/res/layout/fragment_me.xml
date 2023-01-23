@@ -1,14 +1,660 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.MeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/user_Pfp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/user_pfp" />
+
+            <TextView
+                android:id="@+id/user_Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TheLegend27"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_toRightOf="@+id/user_Pfp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/user_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glenn Lim"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/regular_poppins"
+                android:layout_below="@id/user_Username"
+                android:layout_toRightOf="@id/user_Pfp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/user_Plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basic Plan"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/regular_poppins"
+                android:layout_below="@id/user_Name"
+                android:layout_toRightOf="@id/user_Pfp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="General Services"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_poppins"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/btn_meGeneralSupport"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/rounded_lightgrey_bg">
+
+                <ImageView
+                    android:id="@+id/supportIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/me_support_icon"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/supportIcon"
+                    android:layout_marginBottom="5dp"
+                    android:text="Support"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular_poppins"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_meGeneralMyLikes"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/rounded_lightgrey_bg">
+
+                <ImageView
+                    android:id="@+id/myLikesIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/me_mylikes_icon"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/myLikesIcon"
+                    android:layout_marginBottom="5dp"
+                    android:text="My Likes"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular_poppins"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_meGeneralUpdateInfo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/rounded_lightgrey_bg">
+
+                <ImageView
+                    android:id="@+id/updateInfoIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/me_updateinfo_icon"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/updateInfoIcon"
+                    android:layout_marginBottom="5dp"
+                    android:text="Update Info"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular_poppins"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rounded_lightgrey_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Renter"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/btn_meRenterMeasurements"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/measurementsIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_measurements_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/measurementsIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Measure"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_meRenterPastBoxes"
+                    android:clickable="true"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/pastBoxesIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_pastboxes_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pastBoxesIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Past Boxes"
+                        android:textSize="13dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_meRenterFees"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/feesIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_fees_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/feesIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Fees"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/btn_meRenterLaundry"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/laundryIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_laundry_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/laundryIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Laundry"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_meRenterPickup"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/pickupIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_pickup_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pickupIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Pick up"
+                        android:textSize="13dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_meRenterReview"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/reviewIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_review_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/reviewIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Review"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/rounded_lightgrey_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sharer"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold_poppins"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/btn_meSharerVerify"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/verifyIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_verify_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/verifyIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Verify"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_meSharerEarnings"
+                    android:clickable="true"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/earningsIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_earnings_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/earningsIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Earnings"
+                        android:textSize="13dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_meSharerInsurance"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/insuranceIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_insurance_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/insuranceIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Insurance"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/btn_meSharerLaundry"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/laundry2Icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_laundry_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/laundry2Icon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Laundry"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_meSharerPickup"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/pickup2Icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_pickup2_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pickup2Icon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Pick up"
+                        android:textSize="13dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_meSharerAnalytics"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_lightgrey_bg">
+
+                    <ImageView
+                        android:id="@+id/analyticsIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/me_analytics_icon"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/analyticsIcon"
+                        android:layout_marginBottom="5dp"
+                        android:text="Analytics"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular_poppins"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -24,7 +24,7 @@
             android:id="@+id/btn_filter"
             android:layout_width="31dp"
             android:layout_height="31dp"
-            android:src="@drawable/filter_ic"
+            android:src="@drawable/icon_filter"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="20dp"
             android:layout_centerVertical="true"/>

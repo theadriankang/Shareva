@@ -34,8 +34,8 @@ public class ForYouFragment extends Fragment {
 
     private final ArrayList<ForYouItems> forYouItemsArrayList = new ArrayList<>();
 
-    int[] forYouItemsPic = {R.drawable.giorgio_armani, R.drawable.calvin_klein_jeans, R.drawable.yunnig, R.drawable.sandro,
-            R.drawable.lovefreya, R.drawable.diane_von_furstenberg, R.drawable.ph5, R.drawable.yunni_g};
+    int[] forYouItemsPic = {R.drawable.giorgio_armani, R.drawable.listing_ckj_jacket, R.drawable.listing_yunnig_whiteblazer, R.drawable.listing_sandro_breastedblazer,
+            R.drawable.listing_lovefreya_skyblue, R.drawable.listing_dvf_navybluewhitestripe, R.drawable.listing_ph5_knitdress, R.drawable.listing_yunnig_redsleevelessdress};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

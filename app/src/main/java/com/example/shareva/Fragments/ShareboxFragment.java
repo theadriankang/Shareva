@@ -47,6 +47,8 @@ public class ShareboxFragment extends Fragment {
             }
         });
 
+
+        // When Swipe, the Animation will follow to the respective tab viewed
         viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
