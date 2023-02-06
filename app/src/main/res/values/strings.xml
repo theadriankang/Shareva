@@ -14,28 +14,62 @@
 
 
     <string-array name="forYouItem_name">
-        <item name="Giorgio Armani">Giorgio Armani</item>
-        <item name="Calvin Klein Jeans">Calvin Klein Jeans</item>
-        <item name="YUNNI.G">YUNNI.G</item>
-        <item name="SANDRO">SANDRO</item>
-        <item name="LoveFreya">LoveFreya</item>
-        <item name="Diane Von Furstenberg">Diane Von Furstenberg</item>
-        <item name="PH5">PH5</item>
-        <item name="YUNNI.G">YUNNI.G</item>
+        <item name="THE $KELETON">THE $KELETON</item>
+        <item name="Daytona_cosmograph">Daytona Cosmograph</item>
+        <item name="Daytona_cosmograph_116508">Daytona Cosmograph 116508</item>
+        <item name="patek_philippe">Patek Philippe</item>
+        <item name="Audememars Piguet">Audememars Piguet</item>
+        <item name="Rolex">Rolex</item>
+        <item name="audemars">Audememars Piguet</item>
+        <item name="diw">DiW</item>
     </string-array>
 
     <string-array name="forYouItem_desc">
-        <item name="Plaid Double Breasted Jacket">Plaid Double Breasted Jacket</item>
-        <item name="Calvin Klein X Andy Warhol Foundation Jacket">Calvin Klein X Andy Warhol Foundation Jacket</item>
-        <item name="White Blazer">White Blazer</item>
-        <item name="Plaid Single Breasted Blazer">Plaid Single Breasted Blazer</item>
-        <item name="Skyblue Suit Dress">Skyblue Suit Dress</item>
-        <item name="Navy Blue with White Stripe Cotton Wool Blend">Navy Blue with White Stripe Cotton Wool Blend</item>
-        <item name="Fit and flare ribbed knit dress">Fit and flare ribbed knit dress</item>
-        <item name="Peplum Layered Sleeveless Dress">Peplum Layered Sleeveless Dress</item>
-
+        <item name="THE $KELETON 44MM">BLACK STRAP SKELETON</item>
+        <item name="Rolex Daytona Cosmograph">Rolex Daytona Cosmograph</item>
+        <item name="self-winding automatic watchr">Self-winding automatic watch</item>
+        <item name="2017 pre-owned">Grand Complications Tourbillon</item>
+        <item name="SAudemars Piguet Royal Oak">Audemars Piguet Royal Oak</item>
+        <item name="Rolex Day-Date">Rolex Day-Date</item>
+        <item name="Royal Oak Frosted Gold Chronograph 41mm">Royal Oak Frosted Gold Chronograph</item>
+        <item name="Customized Rolex Watch">Customized Rolex Watch</item>
     </string-array>
 
+    <string-array name="forYouItem_availability">
+        <item name="AVAILABLE">AVAILABLE</item>
+        <item name="AVAILABLE">AVAILABLE</item>
+        <item name="AVAILABLE">AVAILABLE</item>
+        <item name="AVAILABLE">AVAILABLE</item>
+        <item name="AVAILABLE">AVAILABLE</item>
+        <item name="AVAILABLE">AVAILABLE</item>
+        <item name="AVAILABLE">AVAILABLE</item>
+        <item name="AVAILABLE">AVAILABLE</item>
+    </string-array>
+
+    <string-array name="forYouItem_moreDesc">
+        <item name="1">The $keleton Timepiece collection is inspired to the Skeleton sneakers collection. The Timepiece design combines the expertise of the watchmaking world given by the skeleton automatic movement with the futuristic design concept of 3D print which is recalled on the hexagonal perforated strap. The $kull bone at 6h and Philipp Plein Branding at 12h are key branding elements applied to give a more iconic yet sophisticated flavor to the timepiece. Experience the unexpected with Philipp Plein!
+THE $KELETON 44MM - IP BLACK CASE - BLACK DIAL - BLACK STRAP
+Case Material STAINLESS STEEL
+Case Color IP BLACK </item>
+        <item name="2">Pre-Owned Rolex Daytona Cosmograph (116599RBOW) self-winding automatic watch, features a 40mm 18k white gold case with a raindbow sapphire bezel with diamond lugs surrounding a diamond dial on an 18k white gold Oyster bracelet with folding buckle. Functions include hours, minutes, small seconds, chronograph and tachymeter. This watch comes complete with box and papers. G Serial. We back this watch with a 2-Year WatchBox warranty!
+</item>
+        <item name="3">Pre-Owned Rolex Daytona Cosmograph (116508) self-winding automatic watch, features a 40mm 18k yellow gold case surrounding a green dial on an 18k yellow gold Oyster bracelet with folding buckle. Functions include hours, minutes, small seconds, chronograph and tachymeter. This watch comes complete with box and papers. Scattered Serial. We back this watch with a 2-Year WatchBox warranty!
+</item>
+        <item name="4">Established in 1839, Patek Philippe takes pride in being one of the oldest watchmakers in the world. The Swiss brand\'s horology expertise and impeccable know-how are combined with a timeless aesthetic to create emblematic timepieces, like this 2017 pre-owned Grand Complications Tourbillon Minute Repeater Perpetual Calendar41mm: the platinum case carries high-precision functions such as a perpetual calendar and moon phase indication, making justice to its name.
+</item>
+        <item name="5">For over 100 years, Audemars Piguet has been at the centre of fine watchmaking. First presented in 1972, the Royal Oak silhouette was designed to offer a more modern take on a classic watch design, while demonstrating impeccable know-how. A prime example, this 2021 pre-owned Royal Oak Frosted Gold Chronograph 41mm is a distinctive piece from the collection offering an archival look at a true hero.
+</item>
+        <item name="6">Pre-Owned Rolex Day-Date (228235) self - winding automatic watch, features a 40mm 18k Everose gold case surrounding an olive green dial on an 18k Everose gold President bracelet with folding buckle.. Functions include hours, minutes, seconds, day and date. This watch comes complete with box and papers. Scattered Serial. Time remaining on the factory warranty!
+</item>
+        <item name="7">Pre-Owned Audemars Piguet Royal Oak (4100BA) self-winding automatic watch, features a 34mm 18k yellow gold case surrounding a Black Tapisserie dial on an 18k yellow gold bracelet with a folding buckle. Functions include hours, minutes, seconds, and date. This watch comes with the original box and Extract. B Serial. We back this watch with a 2-Year WatchBox warranty!
+</item>
+        <item name="8">The DiW Emerald Carbon Daytona is based on the Rolex Daytona, however this customised creation has a mottled black/grey dial, with gold and green accents, in a high end carbon fibre case.
+</item>
+    </string-array>
+
+    <string name="facebook_app_id">1836573116729492</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">22aeee0baa6b881c087b95e3b7aa81d7</string>
 
 
 </resources>

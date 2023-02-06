@@ -34,8 +34,8 @@ public class ForYouFragment extends Fragment {
 
     private final ArrayList<ForYouItems> forYouItemsArrayList = new ArrayList<>();
 
-    int[] forYouItemsPic = {R.drawable.giorgio_armani, R.drawable.calvin_klein_jeans, R.drawable.yunnig, R.drawable.sandro,
-            R.drawable.lovefreya, R.drawable.diane_von_furstenberg, R.drawable.ph5, R.drawable.yunni_g};
+    int[] forYouItemsPic = {R.drawable.philipp_plein, R.drawable.daytona_cosmograph, R.drawable.daytona_116508, R.drawable.patek_philippe_41mm,
+            R.drawable.royal_oak, R.drawable.day_date_228235, R.drawable.audemars_piguet, R.drawable.diw};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -80,9 +80,7 @@ public class ForYouFragment extends Fragment {
         //layout to contain recyclerview
         GridLayoutManager llm = new GridLayoutManager(mContext, 2);
         llm.setSmoothScrollbarEnabled(true);
-//        llm.setSpanSizeLookup(new MySpansizeLookup(5,1,2));
-        // orientation of linearlayoutmanager.
-//        llm.setOrientation(LinearLayoutManager.HORIZONTAL);
+
         llm.setAutoMeasureEnabled(true);
 
         //set layoutmanager for recyclerview.
@@ -105,6 +103,8 @@ public class ForYouFragment extends Fragment {
 
                 String[] itemName = getResources().getStringArray(R.array.forYouItem_name);
                 String[] itemDesc = getResources().getStringArray(R.array.forYouItem_desc);
+                String[] itemAvailability = getResources().getStringArray(R.array.forYouItem_availability);
+                String[] itemMoreDesc = getResources().getStringArray(R.array.forYouItem_moreDesc);
 
                 for (int i = 0 ; i < itemName.length; i++)
                 {
@@ -112,6 +112,9 @@ public class ForYouFragment extends Fragment {
                     forYouItems.setImage(forYouItemsPic[i]);
                     forYouItems.setItemName(itemName[i]);
                     forYouItems.setItemDesc(itemDesc[i]);
+                    forYouItems.setAvailability(itemAvailability[i]);
+                    forYouItems.setMoreDesc(itemMoreDesc[i]);
+
                     forYouItemsArrayList.add(forYouItems);
                     forYouItems = null;
                 }
@@ -127,7 +130,6 @@ public class ForYouFragment extends Fragment {
 
         protected void onPostExecute(String file_url) {
 
-//            pgbPopulardestination.setVisibility(View.GONE);
 
             if (forYouItemsArrayList != null && forYouItemsArrayList.size() > 0) {
                 forYouAdapter = new ForYouAdapter(mContext, forYouItemsArrayList);

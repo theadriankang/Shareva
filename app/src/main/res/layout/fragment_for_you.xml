@@ -6,6 +6,12 @@
     android:orientation="vertical"
     tools:context=".Fragments.ForYouFragment">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/luxease"
+        android:layout_gravity="center_horizontal"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

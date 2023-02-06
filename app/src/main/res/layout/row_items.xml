@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:id="@+id/cv_watch"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_nft"
+    <RelativeLayout
+        android:id="@+id/rel_watch"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         card_view:cardCornerRadius="6dp"
@@ -47,8 +48,9 @@
                     android:text="Giorgio Armani"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:layout_gravity="start"
-                    android:textSize="15sp"/>
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="13sp"/>
 
                 <TextView
                     android:id="@+id/txtView_itemDesc"
@@ -57,7 +59,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_gravity="start"
                     android:textColor="@color/black"
-                    android:textSize="13sp"
+                    android:textSize="12sp"
                     android:text="Plaid Double Breasted Jacket"/>
 
                 <TextView
@@ -75,6 +77,6 @@
 
         </FrameLayout>
 
-    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
 
-</RelativeLayout>
+</androidx.cardview.widget.CardView>

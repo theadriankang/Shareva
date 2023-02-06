@@ -13,6 +13,12 @@
             android:orientation="vertical"
             >
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/luxease"
+                android:layout_gravity="center_horizontal"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,8 +48,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:id="@+id/btn_uploadImg1"
@@ -76,315 +81,6 @@
 
             </HorizontalScrollView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginTop="20dp"
-                android:text="Choose a category"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/bold_poppins"
-                />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingDressCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:padding="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg">
-
-                    <ImageView
-                        android:id="@+id/dressCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_dress_icon"
-                        android:layout_centerHorizontal="true"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/dressCategory"
-                        android:layout_marginBottom="5dp"
-                        android:text="Dress"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/regular_poppins"
-                        android:layout_centerHorizontal="true"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingTeesCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:padding="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg">
-
-                    <ImageView
-                        android:id="@+id/teesCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_tees_icon"
-                        android:layout_centerHorizontal="true"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/teesCategory"
-                        android:layout_marginBottom="5dp"
-                        android:text="Tees"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/regular_poppins"
-                        android:layout_centerHorizontal="true"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingBottomsCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:padding="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg">
-
-                    <ImageView
-                        android:id="@+id/bottomsCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_bottoms_icon"
-                        android:layout_centerHorizontal="true"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/bottomsCategory"
-                        android:layout_marginBottom="5dp"
-                        android:text="Bottoms"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/regular_poppins"
-                        android:layout_centerHorizontal="true"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingShirtsCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:padding="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg">
-
-                    <ImageView
-                        android:id="@+id/shirtsCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_shirts_icon"
-                        android:layout_centerHorizontal="true"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/shirtsCategory"
-                        android:layout_marginBottom="5dp"
-                        android:text="Shirts"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/regular_poppins"
-                        android:layout_centerHorizontal="true"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingSuitsCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:padding="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg">
-
-                    <ImageView
-                        android:id="@+id/suitsCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_suits_icon"
-                        android:layout_centerHorizontal="true"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/suitsCategory"
-                        android:layout_marginBottom="5dp"
-                        android:text="Suits"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/regular_poppins"
-                        android:layout_centerHorizontal="true"/>
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingJacketCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:id="@+id/jacketCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_jacket_icon" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/jacketCategory"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/regular_poppins"
-                        android:text="Jacket"
-                        android:textColor="@color/black" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingPoloCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:id="@+id/poloCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_polo_icon" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/poloCategory"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/regular_poppins"
-                        android:text="Polo-T"
-                        android:textColor="@color/black" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingOfficeCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:id="@+id/officeCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_office_icon" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/officeCategory"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/regular_poppins"
-                        android:text="Office"
-                        android:textColor="@color/black" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingSeasonCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:id="@+id/seasonCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_season_icon" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/seasonCategory"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/regular_poppins"
-                        android:text="Season"
-                        android:textColor="@color/black" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/btn_listingOthersCategory"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/rounded_lightgrey_bg"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:id="@+id/othersCategory"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/item_others_icon" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/othersCategory"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/regular_poppins"
-                        android:text="Others"
-                        android:textColor="@color/black" />
-
-                </RelativeLayout>
-
-            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -399,6 +95,7 @@
                 />
 
             <EditText
+                android:id="@+id/editTxt_listingTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Name your item"
@@ -413,7 +110,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Item's Size"
+                android:text="Watch's Size"
                 android:textColor="@color/black"
                 android:fontFamily="@font/regular_poppins"
                 android:textSize="15dp"
@@ -430,45 +127,49 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_sizeXS"
+                    android:id="@+id/btn_34"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="XS"
+                    android:text="34mm"
+                    android:textAllCaps="false"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/light_grey"
                     app:cornerRadius="10dp"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_sizeS"
+                    android:id="@+id/btn_35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="S"
+                    android:text="35mm"
+                    android:textAllCaps="false"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/light_grey"
                     app:cornerRadius="10dp"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_sizeM"
+                    android:id="@+id/btn_36"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="M"
+                    android:text="36mm"
+                    android:textAllCaps="false"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/light_grey"
                     app:cornerRadius="10dp"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_sizeL"
+                    android:id="@+id/btn_37"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="L"
+                    android:text="37mm"
+                    android:textAllCaps="false"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/light_grey"
                     app:cornerRadius="10dp"/>
@@ -483,45 +184,49 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_sizeXL"
+                    android:id="@+id/btn_38"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="XL"
+                    android:text="38mm"
+                    android:textAllCaps="false"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/light_grey"
                     app:cornerRadius="10dp"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_size2XL"
+                    android:id="@+id/btn_39"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="2XL"
+                    android:text="39mm"
+                    android:textAllCaps="false"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/light_grey"
                     app:cornerRadius="10dp"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_size3XL"
+                    android:id="@+id/btn_40"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="3XL"
+                    android:text="40mm"
+                    android:textAllCaps="false"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/light_grey"
                     app:cornerRadius="10dp"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_size4XL"
+                    android:id="@+id/btn_41"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="4XL"
+                    android:text="41mm"
+                    android:textAllCaps="false"
                     android:textColor="@color/black"
                     app:backgroundTint="@color/light_grey"
                     app:cornerRadius="10dp"/>
@@ -532,7 +237,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Occassion"
+                android:text="Type"
                 android:textColor="@color/black"
                 android:textSize="15dp"
                 android:fontFamily="@font/regular_poppins"
@@ -553,12 +258,12 @@
                     android:layout_marginEnd="20dp">
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btn_occassionEveryday"
+                        android:id="@+id/btn_automatic"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="3dp"
                         android:layout_weight="1"
-                        android:text="Everyday"
+                        android:text="Automatic"
                         android:textColor="@color/black"
                         android:textAllCaps="false"
                         android:padding="10dp"
@@ -567,12 +272,12 @@
                         app:cornerRadius="10dp" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btn_occassionOfficeWear"
+                        android:id="@+id/btn_quarts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="3dp"
                         android:layout_weight="1"
-                        android:text="Office"
+                        android:text="Quarts"
                         android:textColor="@color/black"
                         android:textAllCaps="false"
                         android:padding="10dp"
@@ -581,12 +286,12 @@
                         app:cornerRadius="10dp" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btn_occassionFormal"
+                        android:id="@+id/btn_diver"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="3dp"
                         android:layout_weight="1"
-                        android:text="Formal"
+                        android:text="Diver"
                         android:textColor="@color/black"
                         android:textAllCaps="false"
                         android:padding="10dp"
@@ -604,12 +309,12 @@
                     android:layout_marginEnd="20dp">
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btn_occassionNightOut"
+                        android:id="@+id/btn_solar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="3dp"
                         android:layout_weight="1"
-                        android:text="Night Out"
+                        android:text="Solar"
                         android:textColor="@color/black"
                         android:textAllCaps="false"
                         android:padding="10dp"
@@ -618,12 +323,12 @@
                         app:cornerRadius="10dp" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btn_occassionWedding"
+                        android:id="@+id/btn_cronograph"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="3dp"
                         android:layout_weight="1"
-                        android:text="Wedding"
+                        android:text="Cronograph"
                         android:textColor="@color/black"
                         android:textAllCaps="false"
                         android:padding="10dp"
@@ -632,43 +337,73 @@
                         app:cornerRadius="10dp" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btn_occassionWeekends"
+                        android:id="@+id/btn_spring"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="3dp"
                         android:layout_weight="1"
-                        android:text="Weekends"
+                        android:text="Spring"
                         android:textColor="@color/black"
                         android:textAllCaps="false"
                         android:padding="10dp"
                         android:fontFamily="@font/bold_poppins"
                         app:backgroundTint="@color/light_grey"
                         app:cornerRadius="10dp" />
-
-
 
                 </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_military"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Military"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:padding="10dp"
+                        android:fontFamily="@font/bold_poppins"
+                        app:backgroundTint="@color/light_grey"
+                        app:cornerRadius="10dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_gmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Gmt"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:padding="10dp"
+                        android:fontFamily="@font/bold_poppins"
+                        app:backgroundTint="@color/light_grey"
+                        app:cornerRadius="10dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_aviator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Aviator"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:padding="10dp"
+                        android:fontFamily="@font/bold_poppins"
+                        app:backgroundTint="@color/light_grey"
+                        app:cornerRadius="10dp" />
+
+                </TableRow>
+
             </TableLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:fontFamily="@font/regular_poppins"
-                android:text="Colour"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/color_option"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -682,14 +417,15 @@
                 android:textSize="15dp" />
 
             <EditText
-                android:id="@+id/shareItem_Description"
+                android:id="@+id/editTXt_shareItemDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/share_description_msg"
                 android:textColorHint="@color/hint"
                 android:background="@drawable/rounded_lightgrey_bg"
+                android:layout_gravity="start"
                 android:padding="15dp"
-                android:gravity="center_vertical"
+                android:gravity="start"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:singleLine="false"
@@ -762,7 +498,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="No need"
+                    android:text="Unverified"
                     android:textColor="@color/white"
                     android:textAllCaps="false"
                     android:padding="10dp"
@@ -787,7 +523,6 @@
                 android:fontFamily="@font/bold_poppins"
                 app:backgroundTint="@color/black"
                 app:cornerRadius="30dp" />
-
 
         </LinearLayout>
 

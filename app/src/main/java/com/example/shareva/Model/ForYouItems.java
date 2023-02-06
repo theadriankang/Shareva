@@ -6,14 +6,16 @@ public class ForYouItems {
     private int image;
     private String itemName;
     private String itemDesc;
-    private Boolean availability;
+    private String availability;
+    private String moreDesc;
 
-    public ForYouItems(int id, int image, String itemName, String itemDesc, Boolean availability) {
+    public ForYouItems(int id, int image, String itemName, String itemDesc, String availability, String moreDesc) {
         this.id = id;
         this.image = image;
         this.itemName = itemName;
         this.itemDesc = itemDesc;
         this.availability = availability;
+        this.moreDesc = moreDesc;
     }
 
     public ForYouItems() {
@@ -52,11 +54,19 @@ public class ForYouItems {
         this.itemDesc = itemDesc;
     }
 
-    public Boolean getAvailability() {
+    public String getAvailability() {
         return availability;
     }
 
-    public void setAvailability(Boolean availability) {
+    public void setAvailability(String availability) {
         this.availability = availability;
+    }
+
+    public String getMoreDesc() {
+        return moreDesc;
+    }
+
+    public void setMoreDesc(String moreDesc) {
+        this.moreDesc = moreDesc;
     }
 }

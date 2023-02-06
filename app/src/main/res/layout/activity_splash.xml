@@ -6,14 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Splash Page"
-        android:gravity="center"
-        android:textSize="50dp"
-        android:layout_margin="50dp"
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/luxease_splash"/>
 
-        tools:ignore="HardcodedText" />
 </RelativeLayout>
