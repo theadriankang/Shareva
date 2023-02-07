@@ -8,10 +8,20 @@
     tools:context=".Fragments.MainFragment">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="100dp"
         android:src="@drawable/luxease"
+        android:layout_marginTop="20sp"
         android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Watch Listing"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="30sp"
+        android:textSize="20sp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_watchListing"

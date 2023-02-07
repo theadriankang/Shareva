@@ -4,12 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class WatchDetail_Activity extends AppCompatActivity {
 
-    private ImageView imgView_watch;
+    private ImageView imgView_watch, btn_back;
     private TextView txtView_watchName, txtView_desc, txtView_moreDesc;
 
     Intent intent;
@@ -22,13 +23,26 @@ public class WatchDetail_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_watch_detail);
 
+        getSupportActionBar().hide();
+
         intent = getIntent();
 
         initWidget();
 
         getIntentData();
 
+        pageDirectories();
 
+
+    }
+
+    private void pageDirectories() {
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 
     private void getIntentData() {
@@ -53,6 +67,7 @@ public class WatchDetail_Activity extends AppCompatActivity {
     private void initWidget() {
 
         imgView_watch = findViewById(R.id.imgView_watch);
+        btn_back = findViewById(R.id.btn_back);
 
         txtView_watchName = findViewById(R.id.txtView_watchName);
         txtView_desc = findViewById(R.id.txtView_desc);

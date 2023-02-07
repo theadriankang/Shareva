@@ -1,4 +1,4 @@
-package com.example.shareva;
+package com.example.shareva.Adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

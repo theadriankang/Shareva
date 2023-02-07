@@ -65,6 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
                 new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         // App code
                     }
 

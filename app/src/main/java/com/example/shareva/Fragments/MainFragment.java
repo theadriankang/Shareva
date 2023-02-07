@@ -83,7 +83,7 @@ public class MainFragment extends Fragment {
         Cursor cursor = watchDataBaseHelper.getAllData();
         if (cursor.getCount()==0)
         {
-            Toast.makeText(mContext, "No existing workout record", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "No existing watch listing record", Toast.LENGTH_SHORT).show();
             return;
         }
         else
